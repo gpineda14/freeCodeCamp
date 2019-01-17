@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel:700|Lato');
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    ". . ."
+    ". main ."
+    ". . ."
+}
+
+.main {
+  grid-area: main;
+/*   border: solid 3px black; */
+}
+
+.quote-box {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas: 
+    "card-header"
+    "card-body";
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.card-header {
+  grid-area: card-header;
+  background: black;
+}
+
+.card-body {
+  grid-area: card-body;
+}
+
+.author-text {
+  padding: 3%;
+  font-family: 'Cinzel', serif; 
+}
+
+.quote-text {
+  padding: 3%;
+  font-family: 'Lato', sans-serif;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+}
+
+.tweetBtn {
+  color: black;
+}
+
+.newQuoteBtn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  font-family: 'Lato', sans-serif;
+}
